@@ -20,7 +20,7 @@ def timefun(sched_timer):
 
 if __name__ == '__main__':
 	sched_timer = datetime.datetime(2017,11,17,17,47,50)
-  pyfile = sys.argv[1]
-  python pyfile
+  	pyfile = sys.argv[1]
+  	python pyfile
 	print('run the code at %s' %sched_timer) 
 	timefun(sched_timer)
