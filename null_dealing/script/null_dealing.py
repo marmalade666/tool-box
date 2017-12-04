@@ -41,10 +41,11 @@ class Dealing(object):
         y = key_value
         for i in range(len(x.columns)):
             data1 = x.iloc[:, i].dropna(how='any')
+            data1 = data1.copy()
             key = data1.value_counts().argmax()
-            data2 = x.iloc[:, i].dropna(how='any')
+            data2 = data1.copy()
             key1 = data2.quantile(y)
-            data3 = x.iloc[:, i].dropna(how='any')
+            data3 = x.iloc[:, i]
             data3[data3 > key1] = key1
             data3 = data3.fillna(value=key)
             data_union = pd.concat([data_union, data3], axis=1)
