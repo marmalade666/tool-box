@@ -1,12 +1,14 @@
+'''
+    __author__ = 'sladesal'
+    __time__ = '20171128'
+    __bolg__ = 'www.shataowei.com'
+'''
 from __future__ import division
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing
 from sklearn.cross_validation import train_test_split
 from sklearn.neighbors import NearestNeighbors
-
-__author__ = 'slade_sal'
-__time__ = '20171128'
 
 
 def change_data_format(data):
@@ -124,7 +126,7 @@ def ohe(data, limit_value=10):
 
 
 # smote unbalance dataset
-def smote(data, tag_label='tag_1', amount_personal=0, std_rate=5, k=5,method = 'mean'):
+def smote(data, tag_label='tag_1', amount_personal=0, std_rate=5, k=5, method='mean'):
     cnt = data[tag_label].groupby(data[tag_label]).count()
     rate = max(cnt) / min(cnt)
     location = []
@@ -165,8 +167,9 @@ def smote(data, tag_label='tag_1', amount_personal=0, std_rate=5, k=5,method = '
             if method == 'mean':
                 new_case1 = neighbor_group[:, continue_index].mean(axis=0)
             # 连续样本的附近点向量上的点也是异常点
-            if method =='random':
-                new_case1 =less_data[pool][continue_index]  + np.random.rand()*(less_data[pool][continue_index]-neighbor_group[0][continue_index])
+            if method == 'random':
+                new_case1 = less_data[pool][continue_index] + np.random.rand() * (
+                less_data[pool][continue_index] - neighbor_group[0][continue_index])
             # 分类变量取mode
             new_case2 = []
             for i in class_index:
@@ -211,7 +214,7 @@ if __name__ == '__main__':
     print('空值填充完成！')
     data_all = ohe(data_all)
     print('onehotencoding 完成！')
-    data_all = smote(data_all,method='random')
+    data_all = smote(data_all, method='random')
     print('smote过程完成！')
     feature, tag = reload(data_all)
     X_train, X_test, y_train, y_test = split_data(feature, tag)
