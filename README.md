@@ -1,11 +1,13 @@
 # What Is This:
-**some little games** like Intervalometer、**some solutions of the Interesting Question Facing At Different Interviews**、and some **express tools** in the Data Preprocessing and so on
+- **some little games** like Intervalometer
+- **some solutions of the Interesting Question Facing At Different Interviews**
+- and some **express tools** in the Data Preprocessing and so on
 
 # Language:
 Python 3.6
 
 # Others:
-**feature_preprocessing、null_dealing、sample have been put at pypi:[data_preprocessing](https://pypi.python.org/pypi?:action=display&name=data_preprocessing&version=0.0.2)**,we could get easily by `pip install data_preprocessing`
+**feature_preprocessing、null_dealing、sample have been put at pypi：[data_preprocessing](https://pypi.python.org/pypi?:action=display&name=data_preprocessing&version=0.0.2)**,we could get easily by `pip install data_preprocessing`
 
 # More:
 ```
