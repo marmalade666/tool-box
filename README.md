@@ -1,11 +1,13 @@
-### python_tools
-有一些python常用的小工具，实现后存放在这边
+# What Is This:
+some little games like Intervalometer、some solutions of the Interesting Question Facing At Different Interviews、and some express tools in the Data Preprocessing and so on
 
-**其中feature_preprocessing、null_dealing、sample已经封装打包到pypi上了欢迎使用:[data_preprocessing](https://pypi.python.org/pypi?:action=display&name=data_preprocessing&version=0.0.2)**
+# Language:
+Python 3.6
 
-安装：pip install data_preprocessing
+# Others:
+**feature_preprocessing、null_dealing、sample have been put at pypi:[data_preprocessing](https://pypi.python.org/pypi?:action=display&name=data_preprocessing&version=0.0.2)**,we could get easily by `pip install data_preprocessing`
 
-使用:
+# More:
 ```
 from data_preprocessing import data_preprocessing
 # sample 模块
@@ -20,3 +22,7 @@ null_dealing.方法名 #即可
 feature_filter = data_preprocessing.feature_filter()
 feature_filter.方法名 #即可
 ```
+
+# To-Do:
+- show more Interviews Questions
+- do more interesting things
