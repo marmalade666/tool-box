@@ -7,7 +7,7 @@
 Python 3.6
 
 # Others:
-**feature_preprocessing、null_dealing、sample have been put at pypi：[data_preprocessing](https://pypi.python.org/pypi?:action=display&name=data_preprocessing&version=0.0.2)**,we could get easily by `pip install data_preprocessing`
+Packeages like **Feature_preprocessing、Null_dealing、Sample** have been put at pypi：[data_preprocessing](https://pypi.python.org/pypi?:action=display&name=data_preprocessing&version=0.0.2)，we could get easily by `pip install data_preprocessing`
 
 # More:
 ```
