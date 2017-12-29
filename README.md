@@ -9,6 +9,13 @@ Python 3.6
 # Others:
 Packeages like **Feature_preprocessing、Null_dealing、Sample** have been put at pypi：[data_preprocessing](https://pypi.python.org/pypi?:action=display&name=data_preprocessing&version=0.0.2)，we could get easily by `pip install data_preprocessing`
 
+# Dependence：
+You should install the following packages first and the version is out of mandatory requirements
+- numpy
+- pandas
+- sklearn
+- matplotlib 
+
 # More:
 ```
 from data_preprocessing import data_preprocessing
